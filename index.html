@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.location='test.html'">Переход по ссылке</button>   
+ <button id="abc">фаил зеркало</button>   
+ <p>
+    Я создал ссылку на
+    <a href="test.html">на новую страница</a>.
+  </p>
+ <script>
+    document.getElementById("abc").addEventListener("click", function() {
+        var button = document.getElementById("abc");
+        if (button.textContent === "фаил зеркало") {
+            button.textContent = "скачивание файла";
+        } else {
+            button.textContent = "фаил зеркало";
+        }
+    })
+</script>
+</body>
+</html>
